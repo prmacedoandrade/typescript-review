@@ -21,4 +21,7 @@ export abstract class Shape {
         return `x=${this._x}, y=${this._y}`;
     }
 
+    abstract calculateArea(): number;
+
+
 }

@@ -17,9 +17,10 @@ console.log("------------------------------");
 let theShapes: Shape[] = [];
 
 //theShapes.push(myShape);
-theShapes.push(myCircle);
 theShapes.push(myRetangle);
+theShapes.push(myCircle);
 
 for(let tempShape of theShapes){
-    console.log(tempShape.getInfo())
+    console.log(tempShape.getInfo());
+    console.log(tempShape.calculateArea());
 }

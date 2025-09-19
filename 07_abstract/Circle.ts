@@ -1,12 +1,12 @@
 import { Shape } from "./Shape";
 
 export class Circle extends Shape {
-    
-    constructor(theX: number, theY:number, private _radius: number){
+
+    constructor(theX: number, theY: number, private _radius: number) {
         super(theX, theY);
-        
+
     }
-    
+
     public get radius(): number {
         return this._radius;
     }
@@ -15,7 +15,11 @@ export class Circle extends Shape {
     }
 
     getInfo(): string {
-        return super.getInfo() + `, radius=${this._radius}`;
+        return super.getInfo() + `,I am a circle, radius=${this._radius}`;
+    }
+
+    calculateArea(): number {
+        return Math.PI * Math.pow(this._radius, 2);
     }
 
 }
